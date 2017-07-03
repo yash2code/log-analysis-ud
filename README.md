@@ -55,23 +55,23 @@
 
 ```
 		  article       | views
---------------------+--------
- candidate-is-jerk  | 338647
- bears-love-berries | 253801
- bad-things-gone    | 170098
-(3 rows)
+	--------------------+--------
+	 candidate-is-jerk  | 338647
+	 bears-love-berries | 253801
+	 bad-things-gone    | 170098
+	(3 rows)
 
 ``` 
  - Who are the most popular article authors of all time?
   
 ```
 		       name          | views
-------------------------+--------
- Ursula La Multa        | 507594
- Rudolf von Treppenwitz | 423457
- Anonymous Contributor  | 170098
- Markoff Chaney         |  84557
-(4 rows)
+	------------------------+--------
+	 Ursula La Multa        | 507594
+	 Rudolf von Treppenwitz | 423457
+	 Anonymous Contributor  | 170098
+	 Markoff Chaney         |  84557
+	(4 rows)
 
 ```
   
@@ -79,8 +79,8 @@
 
 ```
 		   date    | total | error |     percent
-------------+-------+-------+------------------
- 2016-07-17 | 55907 |  1265 | 2.26268624680273
-(1 row)
+	------------+-------+-------+------------------
+	 2016-07-17 | 55907 |  1265 | 2.26268624680273
+	(1 row)
 
 ```
