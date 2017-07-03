@@ -49,12 +49,26 @@
 	where (Error::float*100)/Total::float > 1.0 order by Percent desc;
 	```
 
-### Output or Results:
+### Output or Results
 
-	- What are the most popular three articles of all time?
+- What are the most popular three articles of all time?
 
 		```
  		Candidate is jerk, alleges rival -- 338647
   		Bears love berries, alleges bear -- 253801
   		Bad things gone, say good people -- 170098
    		``` 
+ - Who are the most popular article authors of all time?
+  
+		```
+		  Ursula La Multa -- 507594
+		  Rudolf von Treppenwitz -- 423457
+		  Anonymous Contributor -- 170098
+		  Markoff Chaney -- 84557
+		```
+  
+- On which days did more than 1% of requests lead to errors?
+
+		```
+		  July 17, 2016 -- 2.00
+		```
