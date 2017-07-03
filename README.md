@@ -53,22 +53,34 @@
 
 - What are the most popular three articles of all time?
 
-		```
- 		Candidate is jerk, alleges rival -- 338647
-  		Bears love berries, alleges bear -- 253801
-  		Bad things gone, say good people -- 170098
-   		``` 
+```
+		  article       | views
+--------------------+--------
+ candidate-is-jerk  | 338647
+ bears-love-berries | 253801
+ bad-things-gone    | 170098
+(3 rows)
+
+``` 
  - Who are the most popular article authors of all time?
   
-		```
-		  Ursula La Multa -- 507594
-		  Rudolf von Treppenwitz -- 423457
-		  Anonymous Contributor -- 170098
-		  Markoff Chaney -- 84557
-		```
+```
+		       name          | views
+------------------------+--------
+ Ursula La Multa        | 507594
+ Rudolf von Treppenwitz | 423457
+ Anonymous Contributor  | 170098
+ Markoff Chaney         |  84557
+(4 rows)
+
+```
   
 - On which days did more than 1% of requests lead to errors?
 
-		```
-		  July 17, 2016 -- 2.00
-		```
+```
+		   date    | total | error |     percent
+------------+-------+-------+------------------
+ 2016-07-17 | 55907 |  1265 | 2.26268624680273
+(1 row)
+
+```
