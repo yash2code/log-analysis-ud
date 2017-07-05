@@ -16,7 +16,7 @@ select slug as article, count(log.path) as views
 # Who are the most popular article authors of all time?
 
 solution_2 = """
-select * from authors_view;"""
+select * from author_view;"""
 
 # On which days did more than 1% of requests lead to errors?
 
@@ -36,7 +36,10 @@ def sol1():
     cursor.execute(solution_1)
     results = cursor.fetchall()
     conn.close()
-    return results
+    print('Most popular articles:\n')
+    for row in results:
+        print('{0}---{1} Views'.format(row[0], row[1]))
+    print('')
 
 # function for question 2
 
@@ -47,7 +50,10 @@ def sol2():
     cursor.execute(solution_2)
     results = cursor.fetchall()
     conn.close()
-    return results
+    print('Most popular authors:\n')
+    for row in results:
+        print('{0}---{1} Views'.format(row[0], row[1]))
+    print('')
 
 # function for question 3
 
@@ -58,7 +64,9 @@ def sol3():
     cursor.execute(solution_3)
     results = cursor.fetchall()
     conn.close()
-    return results
+    print('Days with more than 1% errors:\n')
+    for row in results:
+        print('{0} - {1}%'.format(row[0], round(row[3], 2)))
 
 # Function for executing all queries
 
